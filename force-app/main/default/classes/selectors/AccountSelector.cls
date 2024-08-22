@@ -1,4 +1,4 @@
-public with sharing class AccountSelector {
+public class AccountSelector {
 
     public List<Account> selectAccountsByIds(List<Id> accountIds) {
         return [

@@ -9,7 +9,7 @@ public class CaseTriggerHandler extends AbstractTriggerHandler {
     private final List<Case> cases;
     private final Map<Id, Case> oldCasesById;
 
-    private CaseTriggerHandler(List<SObject> cases, Map<Id, SObject> oldCasesById) {
+    public CaseTriggerHandler(List<SObject> cases, Map<Id, SObject> oldCasesById) {
         this.cases = cases;
         this.oldCasesById = (Map<Id, Case>) oldCasesById;
     }

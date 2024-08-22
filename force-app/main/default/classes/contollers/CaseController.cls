@@ -1,4 +1,4 @@
-public with sharing class CaseController {
+public class CaseController {
 
     private static CaseService caseService = new CaseService();
 
