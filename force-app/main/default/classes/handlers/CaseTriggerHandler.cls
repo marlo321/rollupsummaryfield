@@ -15,19 +15,15 @@ public class CaseTriggerHandler extends AbstractTriggerHandler {
     }
 
     public override void afterInsert() {
-
+        CaseController.updateAccountCount(cases, oldCasesById);
     }
 
     public override void afterUpdate() {
-
+        CaseController.updateAccountCount(cases, oldCasesById);
     }
 
     public override void afterDelete() {
-
-    }
-
-    public override void afterUndelete() {
-
+        CaseController.updateAccountCount(cases, oldCasesById);
     }
 
 }
